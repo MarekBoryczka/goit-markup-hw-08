@@ -1,0 +1,54 @@
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__item {
+    width: 370px;
+    border: 1px solid #eeeeee;
+    flex-basis: calc((1100px - 2 * 30px) / 3);
+
+    &:hover,
+    &:focus {
+      transition-property: background-color, color, box-shadow, border, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0;
+      box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+      .cards__description,
+      .cards__description {
+        transform: translateY(0%);
+      }
+    }
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    padding: 20px 24px 0px 24px;
+  }
+
+  &__text {
+    color: var(--lorem-ipsum-color);
+    padding: 4px 24px 20px 24px;
+  }
+
+  &__overlay {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__description {
+    padding: 49px 45px 49px 24px;
+    color: var(--text_on_background-color);
+    font-size: 18px;
+    line-height: 1.55;
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    background-color: var(--brand-overlay-color);
+    transform: translateY(150%);
+    transition: transform 250ms;
+  }
+}

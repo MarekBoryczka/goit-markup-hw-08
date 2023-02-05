@@ -1,0 +1,172 @@
+.form {
+  padding: 40px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 12px;
+  }
+
+  &__item {
+    position: relative;
+
+    &:focus-within .form__iconPerson,
+    &:focus-within .form__iconPhone,
+    &:focus-within .form__iconEmail {
+      transition-property: fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0;
+      fill: var(--brand-color);
+    }
+  }
+
+  &__iconPerson {
+    position: absolute;
+    top: 34px;
+    left: 14px;
+    fill: var(--main-color);
+  }
+
+  &__iconPhone {
+    position: absolute;
+    top: 33px;
+    left: 14px;
+    fill: var(--main-color);
+  }
+
+  &__iconEmail {
+    position: absolute;
+    top: 32px;
+    left: 13px;
+    fill: var(--main-color);
+  }
+
+  &__label {
+    color: var(--lorem-ipsum-color);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+  }
+
+  &__input {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    width: 100%;
+    padding: 11px 0px 11px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+
+    &:focus {
+      transition-property: outline;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0;
+      outline: 1px solid var(--brand-color);
+    }
+  }
+
+  &__textarea {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    margin-top: 4px;
+
+    &:focus {
+      transition-property: outline;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0;
+      outline: 1px solid var(--brand-color);
+    }
+  }
+
+  &__btn {
+    color: var(--text_on_background-color);
+    line-height: 30px;
+    background: var(--brand-color);
+    text-align: center;
+    letter-spacing: 0.06em;
+    display: block;
+    padding: 10px 76px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.checkbox {
+  padding: 20px 14px 30px 15px;
+
+  &__input {
+    appearance: none;
+    visibility: hidden;
+
+    &:focus {
+      transition-property: outline;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-delay: 0;
+      outline: 1px solid var(--brand-color);
+    }
+  }
+
+  &__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    position: relative;
+    cursor: pointer;
+    position: relative;
+    left: 15px;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -20px;
+      top: 0px;
+      width: 15px;
+      height: 15px;
+      border: 1px solid #000;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    position: relative;
+    cursor: pointer;
+    color: var(--brand-color);
+  }
+
+  .checkbox__input:checked + .checkbox__label::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='15' fill='none'%3E%3Crect width='16' height='15' fill='%232196F3' rx='2'/%3E%3Cpath fill='%23fff' stroke='%23fff' stroke-width='.2' d='m3.957 7.752-.069-.066-.069.065-.888.842-.076.072.076.073 3.496 3.334.069.066.069-.066 7.504-7.158.076-.073-.076-.072-.882-.841-.069-.066-.069.066-6.553 6.246-2.539-2.422Z'/%3E%3C/svg%3E");
+    width: 16px;
+    height: 16px;
+    border: none;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
