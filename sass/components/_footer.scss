@@ -1,10 +1,14 @@
 .footer {
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 60px 15px;
 }
 
 .logoBox {
   display: flex;
+}
+
+.sign-upBox {
+  width: 100%;
 }
 
 .footer__title {
@@ -97,14 +101,14 @@
 
 .sign-up {
   display: block;
+  width: 100%;
 
   &__input {
     color: rgba(255, 255, 255, 0.6);
     background-color: var(--background-color);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    width: 358px;
+    width: 100%;
     padding: 15px 16px;
-    margin: 0 auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
   }
@@ -132,10 +136,10 @@
 
 // TABLET   ! ! ! ! ! !
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .footer {
     background-color: var(--background-color);
-    padding: 60px 0px;
+    padding: 60px 15px;
   }
 
   .footer__title {
@@ -223,15 +227,20 @@
     }
   }
 
+  .sign-upBox {
+    width: 450px;
+  }
+
   .sign-up {
-    display: flex;
+    display: block;
 
     &__input {
       color: rgba(255, 255, 255, 0.6);
       background-color: var(--background-color);
       border: 1px solid rgba(255, 255, 255, 0.3);
-      width: 358px;
+      width: 450px;
       padding: 15px 16px;
+      margin: 0px auto;
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
       border-radius: 4px;
     }
@@ -246,9 +255,7 @@
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
       border: none;
       border-radius: 4px;
-      margin-left: 12px;
-      display: flex;
-      align-items: center;
+      margin: 20px auto 0px;
     }
 
     &__icon {
