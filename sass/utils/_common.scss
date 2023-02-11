@@ -12,6 +12,10 @@
     background-color: var(--our-team-color);
   }
 
+  &--mobile {
+    display: none;
+  }
+
   .--sectionSmall {
     padding-bottom: 0px;
   }
@@ -67,5 +71,10 @@
 
   .section {
     padding: 94px 0px;
+
+    &--mobile {
+      display: block;
+      padding: 94px 0px;
+    }
   }
 }
