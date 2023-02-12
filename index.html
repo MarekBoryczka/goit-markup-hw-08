@@ -16,7 +16,7 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <!-- <header class="container header-container">
+    <header class="container header-container">
       <nav class="header-nav">
         <a class="logo" href="./index.html">Web<span class="logo--dark">Studio</span></a>
         <ul class="header-nav__list">
@@ -49,8 +49,15 @@
           >
         </li>
       </ul>
+      <div class="mobile-icon">
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="mobile-icon__burger" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
     </header>
-    <main>
+    <!-- <main>
     <section class="section headline__section">
       <div class="container headline-background">
         <h1 class="headline__title">efektywne rozwiązania<br />dla waszego biznesu</h1>
@@ -142,31 +149,29 @@
             </li>
           </ul>
         </div>
-      </section> -->
-    <section class="section section--dark">
+      </section>-->
+    <!-- <section class="section section--dark">
       <div class="container">
         <h2 class="section__header">Nasz zespół</h2>
         <ul class="team">
           <li class="team__card">
-            <!-- <img class="team__image" src="images/img4.jpg" alt="osoba1" width="270" height="260" /> -->
-            <picture>
+            <picture class="team__image">
               <source
                 media="(max-width: 767px)"
-                srcset="./images/img4-mobile1x.jpg 450w, ../images/img4-mobile2x.jpg 900w"
-                sizes="(min-width: 480px) 450px, 100vw"
+                srcset="./images/img4-mobile1x.jpg 450w, ./images/img4-mobile2x.jpg 900w"
+                sizes="(min-width: 480px) 450px"
               />
               <source
-                media="(min-width: 768px)"
-                srcset="./images/img4-tablet1x.jpg 354w, ../images/img4-tablet2x.jpg 708w"
-                sizes="(min-width: 768px) 354px, 100vw"
+                media="(max-width: 1199px)"
+                srcset="./images/img4-tablet1x.jpg 354w, ./images/img4-tablet2x.jpg 708w"
+                sizes="(max-width: 1199px) 354px"
               />
               <source
                 media="(min-width: 1200px)"
-                srcset="./images/img4-desktop1x.jpg 270w, ../images/img4-desktop2x.jpg 540w"
-                sizes="(min-width: 1200px) 270px, 100vw"
+                srcset="./images/img4-desktop1x.jpg 270w, ./images/img4-desktop2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px"
               />
-
-              <!-- <img src="../images/img4-mobile1x.jpg" alt="osoba1" /> -->
+              <img src="images/img4.jpg" alt="osoba1" />
             </picture>
             <h3 class="team__title">John Doe</h3>
             <p class="team__subtitle">Product Designer</p>
@@ -194,26 +199,25 @@
             </div>
           </li>
           <li class="team__card">
-            <!-- <img class="team__image" src="images/img5.jpg" alt="osoba2" width="270" height="260" /> -->
-            <picture>
+            <picture class="team__image">
               <source
                 media="(max-width: 767px)"
-                srcset="./images/img5-mobile1x.jpg 450w, ../images/img5-mobile2x.jpg 900w"
-                sizes="(min-width: 480px) 450px, 100vw"
+                srcset="./images/img5-mobile1x.jpg 450w, ./images/img5-mobile2x.jpg 900w"
+                sizes="(min-width: 480px) 450px"
               />
               <source
-                media="(min-width: 768px)"
-                srcset="./images/img5-tablet1x.jpg 354w, ../images/img5-tablet2x.jpg 708w"
-                sizes="(min-width: 768px) 354px, 100vw"
+                media="(max-width: 1199px)"
+                srcset="./images/img5-tablet1x.jpg 354w, ./images/img5-tablet2x.jpg 708w"
+                sizes="(max-width: 1199px) 354px"
               />
               <source
                 media="(min-width: 1200px)"
-                srcset="./images/img5-desktop1x.jpg 270w, ../images/img5-desktop2x.jpg 540w"
-                sizes="(min-width: 1200px) 270px, 100vw"
+                srcset="./images/img5-desktop1x.jpg 270w, ./images/img5-desktop2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px"
               />
-
-              <!-- <img src="../images/img4-mobile1x.jpg" alt="osoba2" /> -->
+              <img src="images/img5.jpg" alt="osoba1" />
             </picture>
+
             <h3 class="team__title">John Doe</h3>
             <p class="team__subtitle">Fronted Developer</p>
             <div class="team__container">
@@ -240,25 +244,23 @@
             </div>
           </li>
           <li class="team__card">
-            <!-- <img class="team__image" src="images/img6.jpg" alt="osoba3" width="270" height="260" /> -->
-            <picture>
+            <picture class="team__image">
               <source
                 media="(max-width: 767px)"
-                srcset="./images/img6-mobile1x.jpg 450w, ../images/img6-mobile2x.jpg 900w"
-                sizes="(min-width: 480px) 450px, 100vw"
+                srcset="./images/img6-mobile1x.jpg 450w, ./images/img6-mobile2x.jpg 900w"
+                sizes="(min-width: 480px) 450px"
               />
               <source
-                media="(min-width: 768px)"
-                srcset="./images/img6-tablet1x.jpg 354w, ../images/img6-tablet2x.jpg 708w"
-                sizes="(min-width: 768px) 354px, 100vw"
+                media="(max-width: 1199px)"
+                srcset="./images/img6-tablet1x.jpg 354w, ./images/img6-tablet2x.jpg 708w"
+                sizes="(max-width: 1199px) 354px"
               />
               <source
                 media="(min-width: 1200px)"
-                srcset="./images/img6-desktop1x.jpg 270w, ../images/img6-desktop2x.jpg 540w"
-                sizes="(min-width: 1200px) 270px, 100vw"
+                srcset="./images/img6-desktop1x.jpg 270w, ./images/img6-desktop2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px"
               />
-
-              <!-- <img src="../images/img4-mobile1x.jpg" alt="osoba3" /> -->
+              <img src="images/img6.jpg" alt="osoba1" />
             </picture>
             <h3 class="team__title">John Doe</h3>
             <p class="team__subtitle">Marketing</p>
@@ -286,25 +288,23 @@
             </div>
           </li>
           <li class="team__card">
-            <!-- <img class="team__image" src="images/img7.jpg" alt="osoba4" width="270" height="260" /> -->
-            <picture>
+            <picture class="team__image">
               <source
                 media="(max-width: 767px)"
-                srcset="./images/img7-mobile1x.jpg 450w, ../images/img7-mobile2x.jpg 900w"
-                sizes="(min-width: 480px) 450px, 100vw"
+                srcset="./images/img7-mobile1x.jpg 450w, ./images/img7-mobile2x.jpg 900w"
+                sizes="(min-width: 480px) 450px"
               />
               <source
-                media="(min-width: 768px)"
-                srcset="./images/img7-tablet1x.jpg 354w, ../images/img7-tablet2x.jpg 708w"
-                sizes="(min-width: 768px) 354px, 100vw"
+                media="(max-width: 1199px)"
+                srcset="./images/img7-tablet1x.jpg 354w, ./images/img7-tablet2x.jpg 708w"
+                sizes="(max-width: 1199px) 354px"
               />
               <source
                 media="(min-width: 1200px)"
-                srcset="./images/img7-desktop1x.jpg 270w, ../images/img7-desktop2x.jpg 540w"
-                sizes="(min-width: 1200px) 270px, 100vw"
+                srcset="./images/img7-desktop1x.jpg 270w, ./images/img7-desktop2x.jpg 540w"
+                sizes="(min-width: 1200px) 270px"
               />
-
-              <!-- <img src="../images/img4-mobile1x.jpg" alt="osoba4" /> -->
+              <img src="images/img7.jpg" alt="osoba1" />
             </picture>
             <h3 class="team__title">John Doe</h3>
             <p class="team__subtitle">UI Designer</p>
@@ -333,7 +333,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
     <!-- <section class="section">
         <div class="container">
           <h3 class="section__header">Nasi klienci</h3>
@@ -502,7 +502,61 @@
           <button class="form__btn" type="submit">Wyślij</button>
         </form>
       </div>
+    </div> -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="menu">
+        <li class="header-nav__item">
+          <a class="header-nav__link header-nav__link--is_active" href="./index.html">Agencja</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#">Kontakt</a>
+        </li>
+      </ul>
+      <ul class="header-contact">
+        <li class="header-contact__item">
+          <a class="header-contact__link" href="mailto:info@devstudio.com">
+            <svg class="header-contact__icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="header-contact__item">
+          <a class="header-contact__link" href="tel:+48111111111">
+            <svg class="header-contact__icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +48 111 111 111</a
+          >
+        </li>
+      </ul>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>
