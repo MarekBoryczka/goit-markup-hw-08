@@ -85,27 +85,27 @@
   }
 }
 
-.mobile-menu {
-  display: block;
-  width: 40px;
-  height: 40px;
-  padding: 12px 8px;
+// .mobile-icon {
+//   display: block;
+//   width: 40px;
+//   height: 40px;
+//   padding: 12px 8px;
 
-  @media (min-width: 768px) {
-    display: none;
-  }
+//   @media (min-width: 768px) {
+//     display: none;
+//   }
 
-  &:hover,
-  &:focus {
-    & .mobile-menu__burger {
-      fill: var(--brand-color);
-    }
-  }
-  &__burger {
-    display: block;
-    fill: var(--main-color);
-  }
-}
+//   &:hover,
+//   &:focus-within {
+//     & .mobile-icon__burger {
+//       fill: var(--brand-color);
+//     }
+//   }
+//   &__burger {
+//     display: block;
+//     fill: var(--main-color);
+//   }
+// }
 
 // TABLET   ! ! ! ! ! !
 
@@ -130,9 +130,9 @@
       justify-content: space-between;
     }
 
-    &__item:not(:last-child) {
-      margin-right: 46px;
-    }
+    // &__item:not(:last-child) {
+    //   margin-right: 46px;
+    // }
 
     &__link {
       color: var(--main-color);
@@ -218,9 +218,9 @@
       justify-content: space-between;
     }
 
-    &__item:not(:last-child) {
-      margin-right: 46px;
-    }
+    // &__item:not(:last-child) {
+    //   margin-right: 46px;
+    // }
 
     &__link {
       color: var(--main-color);

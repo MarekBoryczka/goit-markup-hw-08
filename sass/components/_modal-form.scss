@@ -26,21 +26,21 @@
 
   &__iconPerson {
     position: absolute;
-    top: 34px;
+    top: 38px;
     left: 14px;
     fill: var(--main-color);
   }
 
   &__iconPhone {
     position: absolute;
-    top: 33px;
+    top: 38px;
     left: 14px;
     fill: var(--main-color);
   }
 
   &__iconEmail {
     position: absolute;
-    top: 32px;
+    top: 38px;
     left: 13px;
     fill: var(--main-color);
   }
@@ -113,7 +113,7 @@
 }
 
 .checkbox {
-  padding: 20px 14px 30px 15px;
+  padding: 10px 14px 20px 15px;
 
   &__input {
     appearance: none;
@@ -130,14 +130,18 @@
 
   &__label {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     position: relative;
     cursor: pointer;
     position: relative;
     left: 15px;
-    cursor: pointer;
+
+    @media (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
 
     &::before {
       content: '';
@@ -148,17 +152,26 @@
       width: 15px;
       height: 15px;
       border: 1px solid #000;
+
+      @media screen and (min-width: 1200px) {
+        top: 3px;
+      }
     }
   }
 
   &__link {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     position: relative;
     cursor: pointer;
     color: var(--brand-color);
+
+    @media (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 24px;
+    }
   }
 
   .checkbox__input:checked + .checkbox__label::before {
