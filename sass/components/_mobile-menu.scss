@@ -1,56 +1,3 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
-  line-height: 1.5;
-  color: #212121;
-  background-color: #fff;
-}
-
-.container {
-  min-width: 320px;
-  max-width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.page-header {
-  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%),
-    0px 1px 10px 0px rgb(0 0 0 / 12%);
-}
-
-.page-header .container {
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.menu {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-}
-
-.menu .link {
-  padding: 10px;
-  color: inherit;
-  text-decoration: none;
-}
-
-.menu .link:hover,
-.menu .link:focus {
-  text-decoration: underline;
-}
-
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -64,11 +11,6 @@ body {
   border: none;
   border-radius: 50%;
   outline: none;
-
-  //   display: block;
-  //   width: 40px;
-  //   height: 40px;
-  //   padding: 12px 8px;
 
   @media (min-width: 768px) {
     display: none;
@@ -112,12 +54,17 @@ body {
   color: #fff;
 }
 
+.mobile-menu-container {
+  height: 100%;
+}
+
 .mobile-menu {
   list-style: none;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  // padding-bottom: 45px;
 
   &__link {
     display: block;
@@ -130,7 +77,53 @@ body {
     text-decoration: none;
   }
 
-  &__social {
-    display: flex;
+  &__adress {
+    display: block;
+  }
+
+  &__item {
+    padding-bottom: 32px;
+  }
+
+  &__tel {
+    color: var(--brand-color);
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+
+  &__mail {
+    color: var(--lorem-ipsum-color);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    padding-bottom: 32px;
+  }
+}
+
+.mobile-menu-social {
+  display: flex;
+  padding-bottom: 45px;
+
+  &__item {
+    // display: inline-block;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+    padding-right: 10px;
+
+    &:last-child {
+      border: none;
+      margin: none;
+      padding: none;
+    }
+
+    &--colorBrand {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: var(--brand-color);
+    }
   }
 }

@@ -126,6 +126,7 @@
     align-items: center;
 
     &__list {
+      margin-left: 93px;
       display: flex;
       justify-content: space-between;
     }
@@ -163,7 +164,7 @@
   }
 
   .header-contact {
-    display: flex;
+    display: block;
     align-items: center;
 
     &__icon {
@@ -203,6 +204,8 @@
   }
 
   .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
     height: 80px;
     display: flex;
     justify-content: space-between;

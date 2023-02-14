@@ -16,44 +16,48 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="container header-container">
-      <nav class="header-nav">
-        <a class="logo" href="./index.html">Web<span class="logo--dark">Studio</span></a>
-        <ul class="header-nav__list">
-          <li class="header-nav__item">
-            <a class="header-nav__link header-nav__link--is_active" href="./index.html">Agencja</a>
+    <header>
+      <div class="container header-container">
+        <nav class="header-nav">
+          <a class="logo" href="./index.html">Web<span class="logo--dark">Studio</span></a>
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link header-nav__link--is_active" href="./index.html"
+                >Agencja</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Kontakt</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact">
+          <li class="header-contact__item">
+            <a class="header-contact__link" href="mailto:info@devstudio.com">
+              <svg class="header-contact__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="header-nav__item">
-            <a class="header-nav__link" href="#">Kontakt</a>
+          <li class="header-contact__item">
+            <a class="header-contact__link" href="tel:+48111111111">
+              <svg class="header-contact__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="header-contact">
-        <li class="header-contact__item">
-          <a class="header-contact__link" href="mailto:info@devstudio.com">
-            <svg class="header-contact__icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contact__item">
-          <a class="header-contact__link" href="tel:+48111111111">
-            <svg class="header-contact__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +48 111 111 111</a
-          >
-        </li>
-      </ul>
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg class="menu-toggle__burger" width="24" height="16">
-          <use href="./images/icons.svg#icon-menu"></use>
-        </svg>
-      </button>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__burger" width="24" height="16">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
       <section class="section headline__section">
@@ -62,7 +66,7 @@
           <button class="headline__button" type="button" data-modal-open>Zamów usługę</button>
         </div>
       </section>
-      <section class="section --sectionSmall">
+      <section class="section">
         <div class="container">
           <ul class="offer">
             <li class="offer__item">
@@ -157,7 +161,7 @@
                 <source
                   media="(max-width: 767px)"
                   srcset="./images/img4-mobile1x.jpg 450w, ./images/img4-mobile2x.jpg 900w"
-                  sizes="(min-width: 480px) 450px"
+                  sizes="(min-width: 320px) 350px"
                 />
                 <source
                   media="(max-width: 1199px)"
@@ -201,7 +205,7 @@
                 <source
                   media="(max-width: 767px)"
                   srcset="./images/img5-mobile1x.jpg 450w, ./images/img5-mobile2x.jpg 900w"
-                  sizes="(min-width: 480px) 450px"
+                  sizes="(min-width: 320px) 350px"
                 />
                 <source
                   media="(max-width: 1199px)"
@@ -246,7 +250,7 @@
                 <source
                   media="(max-width: 767px)"
                   srcset="./images/img6-mobile1x.jpg 450w, ./images/img6-mobile2x.jpg 900w"
-                  sizes="(min-width: 480px) 450px"
+                  sizes="(min-width: 320px) 350px"
                 />
                 <source
                   media="(max-width: 1199px)"
@@ -290,7 +294,7 @@
                 <source
                   media="(max-width: 767px)"
                   srcset="./images/img7-mobile1x.jpg 450w, ./images/img7-mobile2x.jpg 900w"
-                  sizes="(min-width: 480px) 450px"
+                  sizes="(min-width: 320px) 350px"
                 />
                 <source
                   media="(max-width: 1199px)"
@@ -373,11 +377,7 @@
     <footer class="footer">
       <div class="container container__footer">
         <div>
-          <div class="logoBox">
-            <a class="logo logo--align" href="./index.html"
-              >Web<span class="logo--light">Studio</span></a
-            >
-          </div>
+          <a class="logo" href="./index.html">Web<span class="logo--light">Studio</span></a>
           <address>
             <ul class="footer-adress">
               <li class="footer-adress__item">m. Warszawa, Aleje Jerozolimskie 21</li>
@@ -507,33 +507,43 @@
           <use href="./images/icons.svg#icon-close"></use>
         </svg>
       </button>
-      <div class="mobile-menu">
-        <ul class="mobile-menu__nav">
-          <li>
-            <a class="mobile-menu__link" href="./index.html">Agencja</a>
+      <div class="mobile-menu-container">
+        <div class="mobile-menu">
+          <ul class="mobile-menu__nav">
+            <li>
+              <a class="mobile-menu__link" href="./index.html">Agencja</a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li>
+              <a class="mobile-menu__link" href="#">Kontakt</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__adress">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__tel" href="tel:+48111111111"> +48 111 111 111</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__mail" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="mobile-menu-social">
+          <li class="mobile-menu-social__item">
+            <a class="mobile-menu-social__item--colorBrand" href="#">Instagram</a>
           </li>
-          <li>
-            <a class="mobile-menu__link" href="./portfolio.html">Portfolio</a>
+          <li class="mobile-menu-social__item">
+            <a class="mobile-menu-social__item--colorBrand" href="#">Twitter</a>
           </li>
-          <li>
-            <a class="mobile-menu__link" href="#">Kontakt</a>
+          <li class="mobile-menu-social__item">
+            <a class="mobile-menu-social__item--colorBrand" href="#">Facebook</a>
           </li>
-        </ul>
-        <ul class="mobile-menu__adress">
-          <li>
-            <a class="mobile-menu__link" href="mailto:info@devstudio.com"> info@devstudio.com</a>
-          </li>
-          <li>
-            <a class="mobile-menu__link" href="tel:+48111111111"> +48 111 111 111</a>
+          <li class="mobile-menu-social__item">
+            <a class="mobile-menu-social__item--colorBrand" href="#">LinkedIn</a>
           </li>
         </ul>
       </div>
-      <ul class="mobile-menu__social">
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">LinkedIn</a></li>
-      </ul>
     </div>
     <script
       defer

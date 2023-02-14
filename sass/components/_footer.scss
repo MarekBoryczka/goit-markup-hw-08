@@ -3,10 +3,6 @@
   padding: 60px 15px;
 }
 
-.logoBox {
-  display: flex;
-}
-
 .footer__title {
   color: var(--text_on_background-color);
   font-weight: 700;
@@ -316,6 +312,7 @@
       font-size: 14px;
       line-height: 24px;
       font-style: normal;
+      text-align: left;
 
       &:not(:last-child) {
         padding-bottom: 9px;

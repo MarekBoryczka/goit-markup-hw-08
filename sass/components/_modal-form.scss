@@ -10,6 +10,10 @@
     padding-bottom: 12px;
   }
 
+  // &__list:last-child {
+  //   margin: 0 auto;
+  // }
+
   &__item {
     position: relative;
 
@@ -26,21 +30,21 @@
 
   &__iconPerson {
     position: absolute;
-    top: 38px;
+    top: 32px;
     left: 14px;
     fill: var(--main-color);
   }
 
   &__iconPhone {
     position: absolute;
-    top: 38px;
+    top: 33px;
     left: 14px;
     fill: var(--main-color);
   }
 
   &__iconEmail {
     position: absolute;
-    top: 38px;
+    top: 32px;
     left: 13px;
     fill: var(--main-color);
   }
@@ -113,7 +117,10 @@
 }
 
 .checkbox {
-  padding: 10px 14px 20px 15px;
+  padding: 10px 14px 20px 5px;
+  @media screen and (min-width: 1200px) {
+    padding: 10px 14px 20px 15px;
+  }
 
   &__input {
     appearance: none;
@@ -152,10 +159,6 @@
       width: 15px;
       height: 15px;
       border: 1px solid #000;
-
-      @media screen and (min-width: 1200px) {
-        top: 3px;
-      }
     }
   }
 
